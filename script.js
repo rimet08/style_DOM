@@ -8,14 +8,12 @@ const divPreviewBox = document.getElementById('divPreviewBox');
 const chkShowPreview = document.getElementById('chkShowPreview');
 
 function zmenaVlastnostiDivPreviewBox() {
+    // TEXT
     const barvaTextu = cpxBarvaTextu.value; //přečtení vyprané barvy z input 
-    //divPreviewBox.style.color = barvaTextu;
     const styledivPreviewBox = divPreviewBox.style; //nalezení odkazu na stylový objekt divu
     styledivPreviewBox.color = barvaTextu; // změna stylu divu
-    
-    //console.log(barvaTextu);
 
-
+    // POZADÍ
     const barvaPozadi = cpxBarvaPozadi.value;
     styledivPreviewBox.backgroundColor = barvaPozadi;
 
