@@ -1,0 +1,10 @@
+body {
+    font-family: sans-serif;    /* výchozí bezpetkový font pro celou stránku */
+}
+
+.preview {
+    padding: 10px;  /* vnitřní okraje */
+    margin-top: 10px; /* vzdálenost od předchozího elementu */
+    border: 2px solid #000; /* černé orámování */
+    border-radius: 10px; /* zaoblení rohů */
+}
