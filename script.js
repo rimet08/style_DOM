@@ -29,3 +29,8 @@ function zmenaVlastnostiDivPreviewBox() {
 
 }
 
+function prepniZobrazeniNahladu() {
+    console.log(chkShowPreview.value);
+
+}
+
