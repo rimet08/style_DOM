@@ -9,13 +9,20 @@ const chkShowPreview = document.getElementById('chkShowPreview');
 
 function zmenaVlastnostiDivPreviewBox() {
     // TEXT
-    const barvaTextu = cpxBarvaTextu.value; //přečtení vyprané barvy z input 
-    const styledivPreviewBox = divPreviewBox.style; //nalezení odkazu na stylový objekt divu
+    const barvaTextu = cpxBarvaTextu.value; // přečtení vyprané barvy z input 
+    const styledivPreviewBox = divPreviewBox.style; // nalezení odkazu na stylový objekt divu
     styledivPreviewBox.color = barvaTextu; // změna stylu divu
 
     // POZADÍ
     const barvaPozadi = cpxBarvaPozadi.value;
     styledivPreviewBox.backgroundColor = barvaPozadi;
+    // styledivPreviewBox.style.backgroundColor = barvaPozadi;
+
+    // VELIKOST TEXTU
+    const velikostTextu = rngVelikostTextu.value;
+    divPreviewBox.style.fontSize = velikostTextu + "px"; // přidání jednotky px!!
+
+    // TYP PÍSMA
 
 }
 
