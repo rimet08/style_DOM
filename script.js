@@ -30,7 +30,13 @@ function zmenaVlastnostiDivPreviewBox() {
 }
 
 function prepniZobrazeniNahladu() {
-    console.log(chkShowPreview.checked);
+    //console.log(chkShowPreview.checked);
+    if (!chkShowPreview.checked) {
+        divPreviewBox.style.display = "none";
+    } 
+    else {
+        divPreviewBox.style.display = "block";
+    }
 
 }
 
