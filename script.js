@@ -15,5 +15,9 @@ function zmenaVlastnostiDivPreviewBox() {
     
     //console.log(barvaTextu);
 
+
+    const barvaPozadi = cpxBarvaPozadi.value;
+    styledivPreviewBox.backgroundColor = barvaPozadi;
+
 }
 
