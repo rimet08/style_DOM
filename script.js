@@ -8,7 +8,7 @@ const divPreviewBox = document.getElementById('divPreviewBox');
 const chkShowPreview = document.getElementById('chkShowPreview');
 
 function zmenaVlastnostiDivPreviewBox() {
-    // TEXT
+    // BARVA TEXTU
     const barvaTextu = cpxBarvaTextu.value; // přečtení vyprané barvy z input 
     const styledivPreviewBox = divPreviewBox.style; // nalezení odkazu na stylový objekt divu
     styledivPreviewBox.color = barvaTextu; // změna stylu divu
@@ -24,6 +24,8 @@ function zmenaVlastnostiDivPreviewBox() {
     spnVelikostTextu.innerText = velikostTextu; // aktualizace zobrazené hodnoty
 
     // TYP PÍSMA
+    const fontFamily = selFontFamily.value;
+    divPreviewBox.style.fontFamily = fontFamily;
 
 }
 
