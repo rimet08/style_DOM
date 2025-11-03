@@ -21,6 +21,7 @@ function zmenaVlastnostiDivPreviewBox() {
     // VELIKOST TEXTU
     const velikostTextu = rngVelikostTextu.value;
     divPreviewBox.style.fontSize = velikostTextu + "px"; // přidání jednotky px!!
+    spnVelikostTextu.innerText = velikostTextu; // aktualizace zobrazené hodnoty
 
     // TYP PÍSMA
 
