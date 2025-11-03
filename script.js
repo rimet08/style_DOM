@@ -30,7 +30,7 @@ function zmenaVlastnostiDivPreviewBox() {
 }
 
 function prepniZobrazeniNahladu() {
-    console.log(chkShowPreview.value);
+    console.log(chkShowPreview.checked);
 
 }
 
