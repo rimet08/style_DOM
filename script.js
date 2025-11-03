@@ -7,3 +7,9 @@ const selFontFamily = document.getElementById('selFontFamily');
 const divPreviewBox = document.getElementById('divPreviewBox');
 const chkShowPreview = document.getElementById('chkShowPreview');
 
+function zmenaVlastnostiDivPreviewBox() {
+    const barvaTextu = cpxBarvaTextu.value;
+    console.log(barvaTextu);
+
+}
+
