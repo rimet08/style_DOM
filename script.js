@@ -28,7 +28,13 @@ function zmenaVlastnostiDivPreviewBox() {
     divPreviewBox.style.fontFamily = fontFamily;
 
     // při stejných barvách pozadí a textu skryjeme náhled
-    divPreviewBox.style.display = (barvaTextu === barvaPozadi) ? "none" : "block";
+    if (barvaTextu === barvaPozadi) {
+        divPreviewBox.style.display = "none";
+        chkShowPreview.disabled = true;
+    } else {
+        divPreviewBox.style.display = "block";
+        chkShowPreview.disabled = false;
+    }
 
 }
 
@@ -42,6 +48,3 @@ function prepniZobrazeniNahladu() {
     }
 
 }
-
-
-
