@@ -27,6 +27,9 @@ function zmenaVlastnostiDivPreviewBox() {
     const fontFamily = selFontFamily.value;
     divPreviewBox.style.fontFamily = fontFamily;
 
+    // při stejných barvách pozadí a textu skryjeme náhled
+    divPreviewBox.style.display = (barvaTextu === barvaPozadi) ? "none" : "block";
+
 }
 
 function prepniZobrazeniNahladu() {
@@ -39,4 +42,6 @@ function prepniZobrazeniNahladu() {
     }
 
 }
+
+
 
